@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Message>
+          Hello,there i am live!
+        </Message>
       </header>
     </div>
   );
 }
 
 export default App;
+
+const Message=styled.div`
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+`
